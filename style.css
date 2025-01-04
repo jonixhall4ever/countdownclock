@@ -1,13 +1,16 @@
 body {
-    font-family: Impact, sans-serif;
+    font-family: monospace;
+    line-height: 1;
+    font-size: 25px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 7.5%;
     background-color:#000000;
     color: #f3f3f3;
   }
   #clock {
+    font-family: monospace;
     font-size: 3em;
-    font-weight: bold;
+    font-weight: normal;
     color: #ff0000;
   }
   
