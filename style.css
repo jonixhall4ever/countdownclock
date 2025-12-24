@@ -1,3 +1,4 @@
+/* Just basic meta visuals settings */
 body {
     font-family: monospace;
     line-height: 1;
@@ -13,4 +14,41 @@ body {
     font-weight: normal;
     color: #ff0000;
   }
+
+  /* Extra for structure */
+
+  .countdown {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  align-items: baseline;
+  gap: clamp(1.2rem, 4vw, 3rem);
+  justify-content: center;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  font-size: clamp(2rem, 6.5vw, 5rem);  /* clamp is for size to shrink if needed */
+  color: #ff0000;
+  line-height: 1;
+}
+
+.label {
+  font-size: clamp(1.4rem, 1.9vw, 2rem);
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.sep {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  margin-top: 0.2em;
+  margin: 0 -0.9rem; /*this gets separator closer together with numbers */
+  color: #ff0000;
+}
+
   

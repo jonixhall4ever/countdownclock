@@ -1,3 +1,4 @@
+// This is behaviour/functionality --> clock
 function updateClock() {
     const due_date = new Date('2034-11-10T00:00:00')
     const now = new Date();
@@ -9,7 +10,12 @@ function updateClock() {
     const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));  // Remaining minutes
     const secs = Math.floor((diff % (1000 * 60)) / 1000);  // Remaining seconds
 
-    document.getElementById('clock').textContent = `${days}   ${hours} : ${mins} : ${secs}`;
+    //document.getElementById('clock').textContent = `${days}  ${hours} : ${mins} : ${secs}`;
+    document.getElementById('days').textContent = days;
+    document.getElementById('hours').textContent = hours;
+    document.getElementById('minutes').textContent = mins;
+    document.getElementById('seconds').textContent = secs;
+
   }
   
   // Update the clock every second

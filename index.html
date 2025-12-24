@@ -1,3 +1,4 @@
+<!-- This is putting everything together with frontend (btw commenting is with Ctrl+/ ) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +8,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Tempo até ao noivado</h2>
-  <h2>Mrs. Jonix + Mr. Hall</h2>
+  <h2>Countdown para o casório</h2>
+  <h2>Mrs. Jonix & Mr. Hall</h2>
   <br>
-  <div id="clock"></div>
-  <h3> &nbsp; &nbsp; Dias &nbsp; &nbsp; &nbsp; Horas &nbsp; &nbsp; Minutos &nbsp; &nbsp; Segundos</h3>
-  <br><br>
-  <h2>Último eventos:</h2>
-  <br><br><br><br><br>
-  <h2>Coisas que aconteceram há menos tempo:</h2>
-  <br><br><br><br><br>
+  <!-- <div id="clock"></div> -->
+  <!-- <h3> &nbsp; &nbsp; Dias &nbsp; &nbsp; &nbsp; Horas &nbsp; &nbsp; Minutos &nbsp; &nbsp; Segundos</h3> -->
+   <!-- Substituted by class structure, instead of clock we have 4 numbers -->
+  <div class="countdown"> 
+    <div class="time">
+      <div id="days" class="number"></div>
+      <div class="label">Dias</div>
+    </div>
+    <div class="time">
+      <div id="hours" class="number"></div>
+      <div class="label">Horas</div>
+    </div>
+    <div class="sep">:</div>
+    
+    <div class="time">
+      <div id="minutes" class="number"></div>
+      <div class="label">Minutos</div>
+    </div>
+    <div class="sep">:</div>
+    <div class="time">
+      <div id="seconds" class="number"></div>
+      <div class="label">Segundos</div>
+    </div>
+  </div>
+
+  <!--  -->
+  <br><br><br><br><br><br>
+  <h3>Últimos eventos:</h3>
+  <br><br><br><br><br><br>
+  <h3>Coisas que aconteceram há menos tempo:</h3>
+  <br><br><br><br><br><br>
   <script src="script.js"></script>
 </body>
 </html>
