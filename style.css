@@ -16,7 +16,7 @@ body {
   }
 
   /* Extra for structure */
-
+/* each . is class of html */
   .countdown {
   display: grid;
   grid-template-columns: repeat(6, auto);
@@ -51,4 +51,73 @@ body {
   color: #ff0000;
 }
 
-  
+/* EVENTS */
+.event {
+  /* Style the container */
+  margin-bottom: 5px;
+  padding: 15px;
+}
+
+.event-label {
+  /* Style the p */
+  color: #f3f3f3;
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 25px;
+}
+
+.event-label::before {
+  content: "- ";
+}
+
+.event-date {
+  /* Style the small */
+  color: gray;
+  font-size: 12px;
+}
+
+
+/* Subscribe */
+
+.newsletter p {
+  font-size: 20px;  /* or whatever size you want */
+}
+
+
+
+
+
+/* DANGER MODE */
+.danger-warning {
+  position: fixed;
+  inset: 0;
+  background: black;
+  color: red;
+
+  display: flex !important;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: bold;
+  text-align: center;
+  z-index: 9999;
+
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50.01%, 100% {
+    opacity: 0.85;
+  }
+}
+
+.danger-section p {
+  font-size: 12.5px;  /* or whatever size you want */
+}
+
+

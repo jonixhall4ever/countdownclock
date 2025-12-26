@@ -14,6 +14,7 @@
   <!-- <div id="clock"></div> -->
   <!-- <h3> &nbsp; &nbsp; Dias &nbsp; &nbsp; &nbsp; Horas &nbsp; &nbsp; Minutos &nbsp; &nbsp; Segundos</h3> -->
    <!-- Substituted by class structure, instead of clock we have 4 numbers -->
+  <!--  -->
   <div class="countdown"> 
     <div class="time">
       <div id="days" class="number"></div>
@@ -36,12 +37,41 @@
     </div>
   </div>
 
-  <!--  -->
+  <!-- class is resuable, id appears once -->
   <br><br><br><br><br><br>
-  <h3>Últimos eventos (nota que tá online):</h3>
-  <br><br><br><br><br><br>
-  <h3>Coisas que aconteceram há menos tempo:</h3>
-  <br><br><br><br><br><br>
+  <h3><u>Últimos eventos:</u></h3>
+  <div id="future-events"></div>
+  </div>
+  <br><br>
+  <h3><u>Coisas que já aconteceram há mais tempo:</u></h3>
+  <div id="past-events"></div>
+  </div>
+  <br><br>
+  <!-- DANGER MODE -->
+  <div style="display: none" id="danger-warning">
+    ⚠️ CASAMENTO EM PERIGO ⚠️<br>
+    Parece que um dos nossos pardalitos está à procura do amor noutro lado. <br>
+    Não podemos deixar isso acontecer.<br>
+    Tu sabes o que fazer 🔪😈🔪😈 <br><br>
+  </div>
+  <!-- Subscribe -->
+  <div class="newsletter">
+    <p> Queres subscrever a newsletter para receberes as notificações dos últimos eventos e peripécias desta novela?</p>
+    <input type="email" id="email-input" placeholder="O teu email">
+    <button onclick="subscribe()">Subscrever</button>
+    <p id="subscribe-message"></p>
+  </div>
+  <br><br>
+  <!-- Button for notification of Danger: -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("mXq-jKx3DA-41qP-9"); // Replace with your actual public key
+  </script>
+  <div class="danger-section">
+    <p> ⚠️ Perigo ⚠️ Viste um dos nossos pardalitos em busca do amor noutro lado? Avisa-nos! </p>
+    <button id="notifydanger" onclick="notifyDanger()">🚨 REPORTAR CASAMENTO EM PERIGO 🚨</button>
+    <p id="danger-message"></p>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
