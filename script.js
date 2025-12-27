@@ -134,7 +134,7 @@ function notifyDanger() {
   })
   .then(() => {
     message.textContent = 'Alerta enviado!';
-    console.log('Alerta enviado! Contacta também o administrador com provas, se possível!');
+    console.log('Alerta enviado!');
   })
   .catch((error) => {
     message.textContent = '❌ Erro ao enviar alerta.';
